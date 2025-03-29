@@ -1,0 +1,9 @@
+# netlify.toml
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "no-cache, no-store, must-revalidate"  # 禁用缓存
+
+[[plugins]]
+  package = "@netlify/plugin-static-assets"
